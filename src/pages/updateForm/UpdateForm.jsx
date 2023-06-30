@@ -5,7 +5,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import "./UpdateForm.css";
 import { apiDomain } from "../../utils/utilsDomain";
 import { useParams } from "react-router-dom";
-import { apiDomain } from "../../utils/utilsDomain";
 
 import  './UpdateForm.css'
 
