@@ -11,7 +11,7 @@ import { useParams } from 'react-router-dom';
 const Product = ({ listing }) => {
   const { id } = useParams()
   const deleteProduct = async (id) => {
-    const res = await fetch("http://localhost:8083/listings/" + id, { method: "DELETE" })
+    const res = await fetch(`${apiDomain}listings/${id}`, { method: "DELETE" })
     const data = await res.json()
     return data
   }
