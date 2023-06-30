@@ -1,0 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+.hero {
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(1, 4, 42, 0.3),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images//heroimg1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-info h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.hero .hero-info form {
+  display: flex;
+  border: 1px solid red;
+}
+
+.hero .hero-info form .search {
+  padding: 0.9rem 1.5rem;
+  border-radius: 3rem;
+  width: 80%;
+}
+
+.hero .hero-info form .btn {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  color: white;
+  background-color: royalblue;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.5s;
+}
+
+.hero .hero-info form .btn:hover {
+  box-shadow: inset 30rem 0 0 0 black;
+  color: white;
+}
+
+ */

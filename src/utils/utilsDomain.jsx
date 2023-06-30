@@ -1,0 +1,1 @@
+export const apiDomain = "https://real-estate-app.azurewebsites.net/";

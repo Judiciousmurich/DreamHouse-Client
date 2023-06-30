@@ -1,0 +1,15 @@
+
+  
+  .btn-update{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-update:hover {
+    background-color: royalblue;
+  }
+  

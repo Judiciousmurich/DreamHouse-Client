@@ -1,0 +1,55 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    height: 10vh;
+  }
+  
+  header .logo {
+    
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header .navbar{
+    
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    color: rgb(75, 69, 69);
+    text-decoration: none;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  header .navbar .active,
+  header .navbar :hover {
+    color: #fff;
+    background: royalblue;
+  
+    gap: 30px;
+    
+  }
+  
+
+  
+  header .icons i:hover {
+    color: #fff;
+    background: royalblue;
+    transform: rotate(360deg);
+  }
+  
+  header .icons #menu-bars {
+    display: none;
+  }
+  
