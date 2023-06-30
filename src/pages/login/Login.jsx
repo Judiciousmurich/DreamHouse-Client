@@ -24,7 +24,7 @@ export default function Login() {
 
   const onSubmit = (data) => {
     console.log(data)
-    Axios.post(`${apiDomain}auth/login`, data)
+    Axios.post(apiDomain + "auth/login", data)
       .then(({ data }) => {
         console.log(data)
         if (data.token) {
