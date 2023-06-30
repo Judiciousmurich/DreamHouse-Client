@@ -108,9 +108,11 @@ const Product = ({ listing }) => {
           <p>You need to <a href="/login">Login</a> first in order to schedule a visit.</p>
         </div>
       </div>
-      <div className='btn-delete' onClick={() => deleteProduct(id)}><button>DELETE</button></div>
-    </div>))
-
+      <div className='featured-btn'> 
+      <div  onClick={() => deleteProduct(id)}><button className='btngg'style={{color:"red", fontSize:"16px",fontWeight:"bold"}}> DELETE</button></div>
+    </div></div>
+     
+    ))
   );
 };
 
