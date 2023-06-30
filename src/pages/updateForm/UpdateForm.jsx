@@ -6,7 +6,7 @@ import "./UpdateForm.css";
 import { apiDomain } from "../../utils/utilsDomain";
 import { useParams } from "react-router-dom";
 
-import  './UpdateForm.css'
+import './UpdateForm.css'
 
 const schema = yup.object().shape({
   title: yup.string().required("Title is required"),
@@ -29,7 +29,7 @@ const UpdateForm = () => {
   const { id } = useParams()
 
   const fetchListing = async () => {
-    const res = await fetch(`${apiDomain}listings` + id)
+    const res = await fetch(`${apiDomain}listings/${id}`)
     const data = await res.json()
     setListing(data)
     // return data
@@ -107,14 +107,15 @@ const UpdateForm = () => {
           <option value="balcony">Balcony</option>
         </select>
         {errors.amenities && <p>{errors.amenities.message}</p>}
-        <button type="submit" className="btn-update" style={{backgroundColor: "royalblue",
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "4px",
-    cursor: "pointer"}}>Update</button>
       </div>
-   
+      <button type="submit" className="btn-update" style={{
+        backgroundColor: "royalblue",
+        color: "white",
+        border: "none",
+        padding: "10px 20px",
+        borderRadius: "4px",
+        cursor: "pointer"
+      }}>Update</button>
     </form>
   );
 };
